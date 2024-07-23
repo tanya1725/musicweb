@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="music.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="music.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music website</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navid">
+      <div class="logo">
+        <img src="echotune(logonew).jpg" />
+      </div>
+      <ul class="nav-links">
+        <li>About</li>
+        <li><a href="support">Support</a></li>
+        <li>Login</li>
+        <li>Start for Free</li>
+      </ul>
+      <div class="logomenuicon" id="mix">
+        <img src="menuicon.png" onclick="menu()" />
+      </div>
+      <div class="crossmenuicon" id="cross">
+        <img src="crossicon.png" onclick="cbtn()" />
+      </div>
+    </nav>
+
+    <div class="menu" id="menuicon">
+      <li>About</li>
+      <li>Support</li>
+      <li>Login</li>
+      <li>Start for Free</li>
+    </div>
+
+    <div class="container" id="con">
+      <img class="gold" src="goldenspark(bck).jpg" />
+      <img class="page1img" src="page1(bckimg).png" />
+      <h1 class="listen">Listen.Discover.</h1>
+      <h1 class="repeat">Repeat</h1>
+      <h3 class="yoursound">Your Sound Your Wave</h3>
+      <button class="startfree" onclick="start()">Start</button>
+    </div>
+    <div class="container1" id="con1"></div>
+    <div class="container2" id="con2">
+      <img class="gold2" src="page2(bck).jpg" />
+      <h1 class="musicloved">ALL THE MUSIC YOU LOVED,</h1>
+      <h1 class="fredom">ALL THE FREEDOM YOU NEED</h1>
+      <h5 class="hindi">Hindi And English In One Place</h5>
+    </div>
+    <div class="play1">
+      <img class="play" src="play(webmusic).jpg" />
+      <div class="playbtn" onclick="play3()">
+        <img src="webmusic(playbutn).png" />
+      </div>
+    </div>
+    <div class="play2">
+      <img class="library" src="library(webmusic).jpg" />
+      <div class="playbtn" onclick="play2()">
+        <img src="webmusic(playbutn).png" />
+      </div>
+    </div>
+    <div class="play3">
+      <img class="role" src="musicrole(web).jpg" />
+      <div class="playbtn" onclick="play1()">
+        <img src="webmusic(playbutn).png" />
+      </div>
+    </div>
+    <div class="play4">
+      <img class="heart" src="heart(musicweb).jpg" />
+      <div class="playbtn" onclick="play()">
+        <img src="webmusic(playbutn).png" />
+      </div>
+    </div>
+    <div class="container3" id="con3"></div>
+
+    <div class="container4" id="con4">
+      <img class="musicimage" src="pg3(bckimg).jpg" />
+      <h1 class="Powerfull">Powerful sound for any <br />purpose</h1>
+      <h2 class="max">MAX</h2>
+      <h4 class="maxdetail">
+        Experience best-in-class sound quality that opens up<br />
+        every detail with HiRes Free Lossless Audio<br />
+        Codec (HiRes FLAC). Best enjoyed on 5G or WiFi<br />
+        with a hardware connection.
+      </h4>
+
+      <h2 class="high">High</h2>
+      <h4 class="highdetail">
+        Listen to over 110M songs in studio quality with<br />
+        FLAC. As an open source format, every artist can <br />
+        create and deliver high fidelity music with ease.
+      </h4>
+
+      <h2 class="low">Low</h2>
+      <h4 class="lowdetail">
+        Get the music you love on the go without worrying <br />about data.
+        Useful when you have a weak signal, are <br />reaching your data cap, or
+        are running out of download <br />space.
+      </h4>
+    </div>
+
+    <div class="container5" id="con5"></div>
+
+    <div class="container6" id="con6">
+      <h1 class="con6-press">Press play on the perfect ECHO-TUNE plan</h1>
+      <div class="individual">
+        <h3 class="individuallogo">Individual</h3>
+        <ul class="individualdetail">
+          <li>110M+ tracks in lossless, HiRes FLAC, and Dolby Atmos</li>
+          <li>Ad-free, offline listening</li>
+          <li>Personalized mixes, editorial playlists, and Live sessions</li>
+        </ul>
+      </div>
+      <div class="family">
+        <h3 class="individuallogo">Family (up to 6 members)</h3>
+        <ul class="individualdetail">
+          <li>Clean playlists and curated content for kids</li>
+          <li>Each member has account</li>
+        </ul>
+      </div>
+      <div class="student">
+        <h3 class="individuallogo">Student</h3>
+        <ul class="studentdetail">
+          <li>110M+ tracks in lossless, HiRes FLAC, and Dolby Atmos</li>
+          <li>Ad-free, offline listening</li>
+          <li>Curated study playlists</li>
+        </ul>
+      </div>
+    </div>
+    <!-- ---------------------------------------login page------------------------------------------------ -->
+
+    <!-- <div class="login-page" id="login">
+  <img class="login-gold" src="goldenspark(bck).jpg">
+
+              <div class="login-detail">
+                <h3 class="emailuser">Email or username</h3>
+                <input class="inputtxt" id="txt1"  placeholder="Enter your email or username"></input>
+                <h3 class="password">Password</h3>
+                <input class="passwrdtxt" id="txt2"  placeholder="Enter your Password"></input>
+              </div>          
+              <div class="continue">
+                <h2 class="contxt">Continue</h2>
+              </div>    
+</div> -->
+
+    <div class="container7" id="fotter">
+      <footer>
+        <div class="footer-logo"><img src="echotune(logonew).jpg" /></div>
+        <div class="footer-nav">
+          <a href="#">Privacy Notice</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Cookie Settings</a>
+          <a href="#">Accessibility Statement</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="footer-text">
+          &copy; 2024 EchoTune(tanya gupta). All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+
+    <div class="sidebar" id="side-bar">
+      <div class="logo-sidebar" id="logo-side">
+        <img src="echotune(logonew).jpg" />
+      </div>
+      <div class="item-side" id="exp" onclick="back()">Back</div>
+      <div class="item-side" id="back-again" onclick="backagain()">Back Again</div>
+      <div class="item-side" id="lib">Your Library</div>
+      <h4 class="text-side" id="txetecho">
+        2024 EchoTune(tanya gupta). All Rights Reserved.
+      </h4>
+    </div>
+
+    <div class="music-list" id="mslist">
+      <p class="top-charts">Top Charts</p>
+
+      <div class="music-container" id="msc">
+
+        <div class="music-div">
+          <img class="top-chartmusic" src="topwekly.jpg" />
+          <div onclick="web()" class="topplaybtn">
+            <img src="webmusic(playbutn).png" />
+          </div>
+        </div>
+
+        <div class="music-div1">
+          <img class="top-chartmusic1" src="topromance.jpg" />
+          <div onclick="romanc()" class="topplaybtn1">
+            <img src="webmusic(playbutn).png" /></div>
+        </div>
+        <div class="music-div2">
+          <img class="top-chartmusic2" src="topwekly1.jpg" />
+          <div onclick="weekly()" class="topplaybtn2">
+            <img src="webmusic(playbutn).png" /></div>
+        </div>
+        <div class="music-div3">
+          <img class="top-chartmusic3" src="topheartbreak.jpg" />
+          <div onclick="heart()" class="topplaybtn3">
+            <img src="webmusic(playbutn).png" /></div>
+        </div>
+      </div>
+
+      <p class="new-Releases" id="nr">New Releases</p>
+      <div class="music-container1" id="mc1">
+        <div onclick="web()" class="release-div1">
+          <img class="new-Releases1" src="new-release1.jpg" />
+          <div class="new-releasebtn1">
+            <img src="webmusic(playbutn).png" />
+          </div>
+        </div>
+        <div onclick="romanc()" class="release-div2">
+          <img  class="new-Releases2" src="new-release2.jpg" />
+          <div class="new-releasebtn2">
+            <img src="webmusic(playbutn).png" />
+          </div>
+        </div>
+        <div onclick="weekly()" class="release-div3">
+          <img class="new-Releases3" src="new-release3.jpg" />
+          <div class="new-releasebtn3">
+            <img src="webmusic(playbutn).png" />
+          </div>
+        </div>
+        <div onclick="heart()" class="release-div4">
+          <img class="new-Releases4" src="new-release4.jpg" />
+          <div class="new-releasebtn4">
+            <img src="webmusic(playbutn).png" />
+          </div>
+        </div>
+      </div>
+      <p class="echo-tuneh" id="et">ECHO-TUNE Hit</p>
+      <div class="music-container2" id="mc2">
+        <ul class="cards">
+          <li class="card">
+            <img class="echo-tuneimg" src="echo-tune1.jpg" />
+            <div class="echo-tunebtn1">
+              <img onclick="romanc()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img  class="echo-tuneimg1" src="echo-tune2.jpg" />
+            <div class="echo-tunebtn2">
+              <img onclick="heart()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img onclick="weekly()" class="echo-tuneimg2" src="echo-tune3.jpg" />
+            <div class="echo-tunebtn3">
+              <img onclick="heart()"  src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img  class="echo-tuneimg3" src="echo-tune4.jpg" />
+            <div class="echo-tunebtn4">
+              <img onclick="heart()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img  class="echo-tuneimg4" src="echo-tune5.jpg" />
+            <div class="echo-tunebtn5">
+              <img onclick="web()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img class="echo-tuneimg5" src="echo-tune6.jpg" />
+            <div class="echo-tunebtn6">
+              <img onclick="heart()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img  class="echo-tuneimg6" src="echo-tune7.jpg" />
+            <div class="echo-tunebtn7">
+              <img onclick="romanc()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img class="echo-tuneimg7" src="echo-tune8.jpg" />
+            <div class="echo-tunebtn8">
+              <img onclick="romanc()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img class="echo-tuneimg8" src="echo-tune9.jpg" />
+            <div class="echo-tunebtn9">
+              <img onclick="web()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+          <li class="card">
+            <img class="echo-tuneimg9" src="echo-tune10.jpg" />
+            <div class="echo-tunebtn10">
+              <img onclick="heart()" src="webmusic(playbutn).png" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p class="echo-topArtist" id="eta">ECHO-TOP-ARTIST</p>
+      <div class="music-container3" id="mc3">
+        <ul class="Artist-cards">
+          <li class="card">
+            <img class="echo-artist1" src="echo-artist1.jpg" />
+            <div onclick="heart()" class="top-artist1"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist2" src="echo-artist2.jpg" />
+            <div onclick="web()" class="top-artist2"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist3" src="echo-artist3.jpg" />
+            <div onclick="romanc()"class="top-artist3"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist4" src="echo-artist4.jpg" />
+            <div onclick="weekly()" class="top-artist4"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist5" src="echo-artist5.jpg" />
+            <div onclick="heart()" class="top-artist5"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist6" src="echo-artist6.jpg" />
+            <div  onclick="web()"class="top-artist6"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist7" src="echo-artist7.jpg" />
+            <div onclick="romanc()"class="top-artist7"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist8" src="echo-artist8.jpg" />
+            <div onclick="weekly()"class="top-artist8"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist9" src="echo-artist9.jpg" />
+            <div onclick="web()"class="top-artist9"><img src="webmusic(playbutn).png" /></div>
+          </li>
+          <li class="card">
+            <img class="echo-artist10" src="echo-artist10.jpg" />
+            <div onclick="weekly()"class="top-artist10"><img src="webmusic(playbutn).png" /></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar1" id="ms-side">
+               <div class="top1-img" id="web1"><img  class="music-top-play" src="topwekly.jpg"><p class="topchart1-word">Weekly Top 20</p></div>
+               <div class="top1-img" id="rom1"><img  class="music-top-play" src="topromance.jpg"><p class="topchart1-word">Romance Top 20</p></div>
+               <div class="top1-img" id="wekly"><img  class="music-top-play" src="topwekly1.jpg"><p class="topchart1-word">Weekly Top 20</p></div>
+               <div class="top-mus-play">
+                <table class="top-chart-table " id="tbl1">
+                      <th width="200px">#</th>
+                      <th width="800px">Tittle</th>
+                      <th width="300px">Duration</th>
+                      <tr>
+                          <td align="center">1</td>
+                          <td id="t1"align="center" onclick="audio(0)"></td>
+                          <td id="dt1"align="center"></td>
+                      </tr>
+                      <tr>
+                        <td align="center">2</td>
+                        <td id="t2"align="center"onclick="audio(1)"></td>
+                        <td id="dt2"align="center"></td>
+                    </tr>
+                    <tr>
+                      <td align="center">3</td>
+                      <td id="t3"align="center"onclick="audio(2)"></td>
+                      <td id="dt3"align="center"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">4</td>
+                    <td id="t4"align="center"onclick="audio(3)"></td>
+                    <td id="dt4"align="center"></td>
+                </tr>
+                <tr>
+                  <td align="center">5</td>
+                  <td id="t5"align="center"onclick="audio(4)"></td>
+                  <td id="dt5"align="center"></td>
+              </tr>
+              <tr>
+                <td align="center">6</td>
+                <td id="t6"align="center"onclick="audio(5)"></td>
+                <td id="dt6"align="center"></td>
+            </tr>
+            <tr>
+              <td align="center">7</td>
+              <td id="t7"align="center"onclick="audio(6)"></td>
+              <td id="dt7"align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">8</td>
+            <td id="t8"align="center"onclick="audio(7)"></td>
+            <td id="dt8"align="center"></td>
+        </tr>
+        <tr>
+          <td align="center">9</td>
+          <td id="t9"align="center"onclick="audio(8)"></td>
+          <td id="dt9"align="center"></td>
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td id="t10"align="center"onclick="audio(9)"></td>
+        <td id="dt10"align="center"></td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td id="t11"align="center"onclick="audio(10)"></td>
+      <td id="dt11"align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">12</td>
+    <td id="t12"align="center"onclick="audio(11)"></td>
+    <td id="dt12"align="center"></td>
+</tr>
+<tr>
+  <td align="center">13</td>
+  <td id="t13"align="center"onclick="audio(12)"></td>
+  <td id="dt13"align="center"></td>
+</tr>
+<tr>
+  <td align="center">14</td>
+  <td id="t14"align="center"onclick="audio(13)"></td>
+  <td id="dt14" align="center"></td>
+</tr>
+<tr>
+  <td align="center">15</td>
+  <td id="t15"align="center"onclick="audio(14)"></td>
+  <td id="dt15" align="center"></td>
+</tr>
+<tr>
+  <td align="center">16</td>
+  <td id="t16"align="center"onclick="audio(15)"></td>
+  <td id="dt16" align="center"></td>
+</tr>
+<tr>
+  <td align="center">17</td>
+  <td id="t17"align="center"onclick="audio(16)"></td>
+  <td id="dt17" align="center"></td>
+</tr>
+<tr>
+  <td align="center">18</td>
+  <td id="t18"align="center"onclick="audio(17)"></td>
+  <td id="dt18" align="center"></td>
+</tr>
+<tr>
+  <td align="center">19</td>
+  <td id="t19"align="center"onclick="audio(18)"></td>
+  <td id="dt19" align="center"></td>
+</tr>
+<tr>
+  <td align="center">20</td>
+  <td id="t20"align="center"onclick="audio(19)"></td>
+  <td id="dt20" align="center"></td>
+</tr>
+
+                </table>
+
+
+
+                
+        <!-- top romace -->
+                <table class="top-chart-table1 " id="top-roma">
+                  <th width="200px">#</th>
+                  <th width="800px">Tittle</th>
+                  <th width="300px">Duration</th>
+                  <tr>
+                      <td align="center">1</td>
+                      <td id="r1"align="center" onclick="romaudio(0)"></td>
+                      <td id="dr1"align="center"></td>
+                  </tr>
+                  <tr>
+                    <td align="center">2</td>
+                    <td id="r2"align="center"onclick="romaudio(1)"></td>
+                    <td id="dr2"align="center"></td>
+                </tr>
+                <tr>
+                  <td align="center">3</td>
+                  <td id="r3"align="center"onclick="romaudio(2)"></td>
+                  <td id="dr3"align="center"></td>
+              </tr>
+              <tr>
+                <td align="center">4</td>
+                <td id="r4"align="center"onclick="romaudio(3)"></td>
+                <td id="dr4"align="center"></td>
+            </tr>
+            <tr>
+              <td align="center">5</td>
+              <td id="r5"align="center"onclick="romaudio(4)"></td>
+              <td id="dr5"align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">6</td>
+            <td id="r6"align="center"onclick="romaudio(5)"></td>
+            <td id="dr6"align="center"></td>
+        </tr>
+        <tr>
+          <td align="center">7</td>
+          <td id="r7"align="center"onclick="romaudio(6)"></td>
+          <td id="dr7"align="center"></td>
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td id="r8"align="center"onclick="romaudio(7)"></td>
+        <td id="dr8"align="center"></td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td id="r9"align="center"onclick="romaudio(8)"></td>
+      <td id="dr9"align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">10</td>
+    <td id="r10"align="center"onclick="romaudio(9)"></td>
+    <td id="dr10"align="center"></td>
+</tr>
+<tr>
+  <td align="center">11</td>
+  <td id="r11"align="center"onclick="romaudio(10)"></td>
+  <td id="dr11"align="center"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td id="r12"align="center"onclick="romaudio(11)"></td>
+<td id="dr12"align="center"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td id="r13"align="center"onclick="romaudio(12)"></td>
+<td id="dr13"align="center"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td id="r14"align="center"onclick="romaudio(13)"></td>
+<td id="dr14" align="center"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td id="r15"align="center"onclick="romaudio(14)"></td>
+<td id="dr15" align="center"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td id="r16"align="center"onclick="romaudio(15)"></td>
+<td id="dr16" align="center"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td id="r17"align="center"onclick="romaudio(16)"></td>
+<td id="dr17" align="center"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td id="r18"align="center"onclick="romaudio(17)"></td>
+<td id="dr18" align="center"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td id="r19"align="center"onclick="romaudio(18)"></td>
+<td id="dr19" align="center"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td id="r20"align="center"onclick="romaudio(19)"></td>
+<td id="dr20" align="center"></td>
+</tr>
+            </table>
+
+
+                    <!-- weekly top 20 -->
+
+            <table class="top-chart-table2 " id="top-weekly">
+              <th width="200px">#</th>
+              <th width="800px">Tittle</th>
+              <th width="300px">Duration</th>
+              <tr>
+                  <td align="center">1</td>
+                  <td id="w1"align="center" onclick="weeklyt(0)"></td>
+                  <td id="dw1"align="center"></td>
+              </tr>
+              <tr>
+                <td align="center">2</td>
+                <td id="w2"align="center"onclick="weeklyt(1)"></td>
+                <td id="dw2"align="center"></td>
+            </tr>
+            <tr>
+              <td align="center">3</td>
+              <td id="w3"align="center"onclick="weeklyt(2)"></td>
+              <td id="dw3"align="center"></td>
+          </tr>
+          <tr>
+            <td align="center">4</td>
+            <td id="w4"align="center"onclick="weeklyt(3)"></td>
+            <td id="dw4"align="center"></td>
+        </tr>
+        <tr>
+          <td align="center">5</td>
+          <td id="w5"align="center"onclick="weeklyt(4)"></td>
+          <td id="dw5"align="center"></td>
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td id="w6"align="center"onclick="weeklyt(5)"></td>
+        <td id="dw6"align="center"></td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td id="w7"align="center"onclick="weeklyt(6)"></td>
+      <td id="dw7"align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">8</td>
+    <td id="w8"align="center"onclick="weeklyt(7)"></td>
+    <td id="dw8"align="center"></td>
+</tr>
+<tr>
+  <td align="center">9</td>
+  <td id="w9"align="center"onclick="weeklyt(8)"></td>
+  <td id="dw9"align="center"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td id="w10"align="center"onclick="weeklyt(9)"></td>
+<td id="dw10"align="center"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td id="w11"align="center"onclick="weeklyt(10)"></td>
+<td id="dw11"align="center"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td id="w12"align="center"onclick="weeklyt(11)"></td>
+<td id="dw12"align="center"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td id="w13"align="center"onclick="weeklyt(12)"></td>
+<td id="dw13"align="center"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td id="w14"align="center"onclick="weeklyt(13)"></td>
+<td id="dw14" align="center"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td id="w15"align="center"onclick="weeklyt(14)"></td>
+<td id="dw15" align="center"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td id="w16"align="center"onclick="weeklyt(15)"></td>
+<td id="dw16" align="center"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td id="w17"align="center"onclick="weeklyt(16)"></td>
+<td id="dw17" align="center"></td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td id="w18"align="center"onclick="weeklyt(17)"></td>
+<td id="dw18" align="center"></td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td id="w19"align="center"onclick="weeklyt(18)"></td>
+<td id="dw19" align="center"></td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td id="w20"align="center"onclick="weeklyt(19)"></td>
+<td id="dw20" align="center"></td>
+</tr>
+        </table>
+               </div>
+               <div class="audioms-play audio-fix"><audio class="rangeplay" id="aud" controls></audio></div>
+    </div>
+  
+    <div class="container-webplay" id="main1">
+
+        </div>
+
+      <!-- <div class="music-footer">
+        <audio class="rangeplay" id="aud" controls></audio>
+      </div> -->
+    </div>
+  </body>
+</html>

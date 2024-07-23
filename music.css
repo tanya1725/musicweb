@@ -1,0 +1,1978 @@
+/* @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css"; */
+
+/* .scrollport {
+  -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+  
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  
+  display: flex;
+  gap: var(--size-10);
+  align-items: start;
+  padding: var(--size-3);
+}
+
+.scrollport > div {
+  block-size: var(--size-13);
+  aspect-ratio: var(--ratio-square);
+  background-color: var(--surface-2);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-4);
+} */
+*{
+  margin:0px;
+  padding:0px;
+}
+img{
+  width:100%;
+  height:100%;
+}
+video{
+      width: 100%;
+      height: 100%;
+  }
+     .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #000000;
+          color: white;
+          padding: 10px 20px;
+      }
+
+      .logo img{
+          max-width:200px;
+       }
+       .logomenuicon{
+                      padding-right:70px;
+                      display:none;
+                      }
+      .crossmenuicon{
+                      padding-right:70px;
+                      display:none;
+                      }
+              .nav-links {
+                  display: flex;
+                  list-style-type: none;
+                  margin-left:700px;
+                  /* padding:0px 0px 0px 200px; */
+              }
+              
+              .nav-links li {
+                  margin-right: 30px;
+              }
+              
+              .nav-links a {
+                  color: white;
+                  text-decoration: none;
+              }
+              @media (max-width: 320px)
+               {
+      
+                  .nav-links{
+                              display: none ;
+                           }
+                  .logo img{
+                              max-width:100px;
+                          }
+                  .logomenuicon{
+                              /* padding-right:70px; */
+                                 display:block;
+                           }
+              .div-container{
+                              width:100%;
+                              height:300px;
+                          }
+              /* .page1img{
+                          width:200px;
+                          height:100px;
+                          margin-left:-200px;
+                      } */
+                      /* .pg1{
+                          width:100%;
+                          height: 200px;
+                          }
+                           */
+                     
+              }
+            
+            
+
+              .menu {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  height: 8vh;
+                  width: 115px; /* Adjust width as needed */
+                  background-color:black;
+                  padding: 20px;
+                  position: fixed;
+                  top:55px;
+                  right: -50px;
+                  display: none;
+                  
+                }
+                
+                .menu a {
+                          text-decoration: none;
+                          color:white;
+                          padding: 10px 0;
+                          font-size:8px;
+                       }
+                
+                .menu a:hover {
+                  background-color: #ddd;
+                }
+
+                          .container {
+                              width: 100%;
+                              height: 700px;
+                              top: 81px;
+                              background-color: aqua;
+                            }
+                          .container1{
+                                          width:100%;
+                                          height:100px;
+                                          background-color: #000000;
+                                          /* position: absolute; */
+                                      }
+
+                                      .container2{
+                                                  width:100%;
+                                                  height:700px;
+                                                  background-color: aqua;
+                                                  position: relative;
+                                                  }
+
+                        .gold{
+                                width:100%;
+                                height:700px;
+                             }
+                        .gold2{
+                                  width:100%;
+                                  height:700px;
+                              }
+                             .page1img{
+                                          width: 800px;
+                                          height:600px;
+                                          margin-top:-700px;
+                                          margin-left:550px;
+                                       } 
+                              .listen{
+                                          margin-top:-400px;
+                                          color:white;
+                                          margin-left: 70px;
+                                          font-family:Book Antiqua;
+                                          font-size:40px;
+                                      }
+
+                              .repeat{
+                                      margin-top:-48px;
+                                      color:white;
+                                      margin-left:370px;
+                                      font-family:Book Antiqua;
+                                      font-size:40px;
+                                    }
+                              .yoursound{
+                                          margin-top:-5px;
+                                          color:white;
+                                          margin-left:100px;
+                                          font-family:Century Schoolbook;
+                                          font-size:25px;
+                                       }
+                              .startfree{
+                                          width:140px;
+                                          height:45px;
+                                          margin-left:170px;
+                                          margin-top:30px;
+                                          border-radius: 5px;
+                                          font-family: Sitka Small Semibold;
+                                          font-size:15px;
+                                          background-color: aliceblue;
+                                         }
+                          .musicloved{
+                                          margin-top:-500px;
+                                          margin-left:900px;
+                                          color:white;   
+                                      }
+                          .fredom{
+                                  color:white;
+                                  margin-top:15px;
+                                  margin-left:850px;
+                                  }
+                          .hindi{
+                                  color:white;
+                                  margin-left:900px;
+                                }
+                                  .play1{
+                                      margin-top:-350px;
+                                      margin-left:500px;
+                                      position: absolute;
+                                      width:175px;
+                                      height:175px;
+                                      background-color:red;
+                                      border-radius: 10px;
+                                      }
+                                  .play1:hover
+                                              {
+                                              transform: translateY(-20px);
+                                              transition: 0.4s ease-out;
+                                              z-index:5;   
+                                              }
+                                  .play{
+                                         border-radius: 10px;
+                                       }
+                                  .play:hover  + .playbtn, .playbtn:hover{
+                                                                           opacity:1; 
+                                                                           transform: translateY(0);
+                                                                          }
+
+                               .playbtn{
+                                          margin-top:-130px;
+                                          margin-left:50px;
+                                          width: 62px;
+                                          height: 62px;
+                                          transform: translateY(10px);
+                                          transition: all 0.4s;
+                                          opacity: 0;
+                                       }
+                                  .play2{
+                                          margin-top:-500px;
+                                          margin-left:460px;
+                                          width:175px;
+                                          height:175px;
+                                          position:absolute;
+                                          background-color: aquamarine;
+                                          border-radius:10px;
+                                        }
+                                  .play2:hover{
+                                                  transform: translateY(-20px);
+                                                  transition: 0.4s ease-out;
+                                                  z-index:5;
+                                                 
+                                               }
+                                  .library{
+                                          border-radius: 10px;
+                                          }
+                                  .library:hover  + .playbtn, .playbtn:hover{
+                                              opacity:1; 
+                                              transform: translateY(0);
+                                             }
+
+                                  .play3{
+                                          margin-top:-580px;
+                                          margin-left:300px;
+                                          width:175px;
+                                          height:175px;
+                                          position: absolute;
+                                          background-color: brown;
+                                          border-radius: 10px;
+                                          }
+                                  .play3:hover{
+                                              transform: translateY(-20px); 
+                                               transition: 0.4s ease-out;
+                                              z-index:5;
+                                          
+                                          }
+                                          .role{
+                                                  border-radius: 10px;
+                                               }
+                                               .role:hover  + .playbtn, .playbtn:hover{
+                                                  opacity:1; 
+                                                  transform: translateY(0);
+                                                 }
+                                              
+                                  .play4{
+                                          margin-top:-420px;
+                                          margin-left:180px;
+                                          width:175px;
+                                          height:175px;
+                                          position: absolute;
+                                          background-color: chocolate;
+                                          border-radius: 10px;
+                                        }
+                                  .play4:hover{
+                                                  transform: translateY(-20px);
+                                                  transition: 0.4s ease-out;
+                                                  z-index:5;
+                                          
+                                              }
+                                  .heart{
+                                          border-radius: 10px;
+                                         }
+                              .heart:hover  + .playbtn, .playbtn:hover{
+                                                                          opacity:1; 
+                                                                          transform: translateY(0);
+                                                                      }
+                                        
+                            @media (max-width: 320px)
+                             {
+                                      .container {
+                                      
+                                          width: 100%; /* Reset top position */
+                                          height:696px;
+                                          background-color: aquamarine;
+                                      }
+                                      .page1img{
+                                              width:100%;
+                                              height:298px;
+                                              margin-top:-600px;
+                                              margin-left:0px;
+                                              }
+                                      .listen{
+                                              margin-top:-600px;
+                                              margin-left:50px;
+                                              font-family:Book Antiqua;
+                                              font-size:30px;
+                                              }
+                                      .repeat{
+                                              margin-top:-5px;
+                                              margin-left:100px;
+                                              font-family:Book Antiqua;
+                                              font-size:30px;
+                                          }
+                                      .yoursound{
+                                                  margin-top:2px;
+                                                  margin-left:0px;
+                                                  font-size:10px;
+                                                  margin-left:80px;
+                                                  }
+                                  .startfree{
+                                                  margin-left:90px; 
+                                                  width:130px;
+                                                  height:40px;  
+                                                  font-family: Sitka Small Semibold;
+                                                  font-size:10px;
+                                                  /* background-color: #000; */
+                                                  /* color: #ddd; */
+                                              }
+                                  .musicloved{
+                                              margin-left:20px;
+                                              margin-top:-600px;
+                                              font-size: 20px;
+                                              }
+                                  .fredom{
+                                              margin-left:20px;
+                                              font-size:15px;
+                                          }
+                                  .hindi{
+                                          margin-left:20px;
+                                          font-size:10px;
+                                        }
+                                  .container1{
+                                              width:100%;
+                                              height:50px;
+                                              /* position: relative; */
+                                              }
+                                 .play1{
+                                          margin-top:-300px;
+                                          margin-left:200px;
+                                          position: absolute;
+                                          width:75px;
+                                          height:75px;
+                                          background-color:red;
+                                          border-radius: 10px;
+                                       }
+                                       .playbtn{
+                                          margin-top:-60px;
+                                          margin-left:25px;
+                                          width: 32px;
+                                          height: 32px;
+                                          transform: translateY(10px);
+                                          transition: all 0.4s;
+                                          opacity: 0;
+                                       }
+                                   .play1:hover
+                                       {
+                                       transform: translateY(-20px);
+                                       transition: 0.4s ease-out;
+                                       z-index:5;   
+                                       }       
+
+
+
+
+                                       .play2{
+                                          margin-top:-360px;
+                                          margin-left:160px;
+                                          width:75px;
+                                          height:75px;
+                                          position:absolute;
+                                          background-color: aquamarine;
+                                          border-radius:10px;
+                                        } 
+                                        .play2:hover{
+                                          transform: translateY(-20px);
+                                          transition: 0.4s ease-out;
+                                          z-index:5;
+                                         
+                                       }
+                          .library{
+                                  border-radius: 10px;
+                                  }
+                          .library:hover  + .playbtn, .playbtn:hover{
+                                      opacity:1; 
+                                      transform: translateY(0);
+                                     }
+                                        .play3{
+                                          margin-top:-310px;
+                                          margin-left:100px;
+                                          width:75px;
+                                          height:75px;
+                                          position: absolute;
+                                          background-color: brown;
+                                          border-radius: 10px;
+                                          }
+                                          .play4{
+                                              margin-top:-360px;
+                                              margin-left:50px;
+                                              width:75px;
+                                              height:75px;
+                                              position: absolute;
+                                              background-color: chocolate;
+                                              border-radius: 10px;
+                                            }
+                                   
+                            }
+                            
+
+                            .container3{
+                                          width:100%;
+                                          height:100px;
+                                          background-color: #000000;
+                                          
+                                       }
+                            .container4{
+                                          width:100%;
+                                          height:700px;
+                                          background-color: aqua;
+                                          position: relative;
+                                        }
+                          .musicimage{
+                                      width:100%;
+                                      height: 700px;
+                                      }
+                          .Powerfull{
+                                      margin-top:-600px;
+                                      margin-left:100px;
+                                      color:white;
+                                      font-family:'Times New Roman', Times, serif;
+                                      font-size:50px;
+                                      }
+                          .max{
+                                  color:white;
+                                  margin-left:100px;
+                                  margin-top:200px;
+                              }
+                          .maxdetail{
+                                      color:white;
+                                      margin-left:100px;
+                                      margin-top:10px;
+                                      font-size: 20px;
+                                    }
+                          .high{
+                                  color:white;
+                                  margin-top:-125px;
+                                  margin-left:600px;
+                              }
+                          .highdetail{
+                                          color:white;
+                                          margin-left:600px;
+                                          margin-top:10px;
+                                          font-size:20px;
+                                      }
+                          .low{
+                                  color:white;
+                                  margin-top:-105px;
+                                  margin-left:1080px;
+                              }
+                          .lowdetail{
+                                      color:white;
+                                      margin-left:1080px;
+                                      margin-top:10px;
+                                      font-size:20px;
+                                      }
+                                      @media (max-width: 320px)
+                                      {
+                                          .Powerfull{
+                                              margin-left:50px;
+                                              font-size:20px;
+                                          }      
+                                          .max{
+                                              color:white;
+                                              margin-left:50px;
+                                              margin-top:20px;
+                                              font-size:15px;
+                                          }
+                                       .maxdetail{
+                                              color:white;
+                                              margin-left:50px;
+                                              margin-top:10px;
+                                              font-size: 10px;
+                                            }
+                                            .high{
+                                              color:white;
+                                              margin-top:50px;
+                                              margin-left:50px;
+                                              font-size: 15px;
+                                          }
+                                          .highdetail{
+                                              color:white;
+                                              margin-left:50px;
+                                              margin-top:10px;
+                                              font-size:10px;
+                                          }
+                                          .low{
+                                              color:white;
+                                              margin-top:50px;
+                                              margin-left:50px;
+                                              font-size: 15px;
+                                          }
+                                          .lowdetail{
+                                              color:white;
+                                              margin-left:50px;
+                                              margin-top:10px;
+                                              font-size:10px;
+                                              }
+                                      }
+                              .container5{
+                                          width:100%;
+                                          height:100px;
+                                          background-color: #000000 ;
+                                         }
+                                         .container6{
+                                                          width: 100%;
+                                                          height:700px;
+                                                          background: rgb(0,0,0);
+                                                          background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(22,28,37,1) 100%);
+                                                      }
+                                          .con6-press{
+                                                      color:white;
+                                                      margin-left:200px;
+                                                      font-size:60px;
+                                                      }
+                                          .individual{
+                                                          width: 400px;
+                                                          height:400px;
+                                                          margin-top:80px;
+                                                          margin-left:100px;
+                                                          background-color: rgba(0,0,0 0.5);
+                                                          border: 2px solid gold;
+                                                          border-radius: 10px;
+                                                      }
+                                          .family{
+                                                      width:400px;
+                                                      height:300px;
+                                                      margin-top:-400px;
+                                                      margin-left:600px;
+                                                      background-color: rgba(0,0,0 0.5);
+                                                          border: 2px solid gold;
+                                                          border-radius: 10px;
+                                                  }
+                                          .student{
+                                                      width:400px;
+                                                      height:200px;
+                                                      margin-left:1050px;
+                                                      margin-top:-300px;
+                                                      background-color: rgba(0,0,0 0.5);
+                                                      border: 2px solid gold;
+                                                      border-radius: 10px;
+                                              }
+                                          .container7{
+                                                          width:100%;
+                                                          height:200px;
+                                                          background-color:cadetblue
+                                                      }
+                                                      footer {
+                                                          background-color:black;
+                                                          color: white;
+                                                          padding: 40px 0;
+                                                          text-align: center;
+                                                      }
+                                                      .footer-logo {
+                                                          /* font-size: 24px; */
+                                                          width:200px;
+                                                          height:50px;
+                                                          margin-left:630px;
+                                                          margin-bottom: 20px;
+                                                      }
+                                                      .footer-nav {
+                                                          margin-bottom: 20px;
+                                                      }
+                                                      .footer-nav a {
+                                                          color: white;
+                                                          text-decoration: none;
+                                                          margin: 0 15px;
+                                                          transition: color 0.3s;
+                                                      }
+                                                      .footer-nav a:hover {
+                                                          color: #f8f9fa;
+                                                      }
+                                                      .footer-social {
+                                                          margin-bottom: 20px;
+                                                      }
+                                                      .footer-social a {
+                                                          color: white;
+                                                          text-decoration: none;
+                                                          margin: 0 10px;
+                                                          transition: color 0.3s;
+                                                      }
+                                                      .footer-social a:hover {
+                                                          color: #f8f9fa;
+                                                      }
+                                                      .footer-text {
+                                                          font-size: 14px;
+                                                      }
+                                                  .individuallogo{
+                                                                      color:gold;
+                                                                      font-size: 25px;
+                                                                      margin-left:50px;
+                                                                      margin-top:20px;
+                                                                  }
+                                                                  .individualdetail{
+                                                                                      margin-top:100px;
+                                                                                      margin-left:20px;
+                                                                                      color:rgb(248, 244, 223);
+                                                                                      font-size: 20px;
+                                                                                      word-spacing: 5px;
+                                                                                  }
+                                                                      .studentdetail{
+                                                                              margin-left:20px;
+                                                                              margin-top:45px;
+                                                                          color:rgb(248, 244, 223);
+                                                                          font-size: 20px;
+                                                                          word-spacing: 5px;
+                                                                                      }
+                                            @media (max-width: 320px)
+                                              {
+                                                  .con6-press{
+                                                      color:white;
+                                                      margin-left:20px;
+                                                      font-size:30px;
+                                                      }
+                                                      .individual{
+                                                          width: 200px;
+                                                          height:150px;
+                                                          margin-top:80px;
+                                                          margin-left:50px;
+                                                          background-color: rgba(0,0,0 0.5);
+                                                          border: 2px solid gold;
+                                                          border-radius: 10px;
+                                                      }
+                                                      .family{
+                                                          width:200px;
+                                                          height:110px;
+                                                          margin-top:50px;
+                                                          margin-left:50px;
+                                                          background-color: rgba(0,0,0 0.5);
+                                                              border: 2px solid gold;
+                                                              border-radius: 10px;
+                                                      }
+                                                      .student{
+                                                          width:200px;
+                                                          height:90px;
+                                                          margin-left:50px;
+                                                          margin-top:50px;
+                                                          background-color: rgba(0,0,0 0.5);
+                                                          border: 2px solid gold;
+                                                          border-radius: 10px;
+                                                          }
+                                                          .individuallogo{
+                                                              color:gold;
+                                                              font-size: 15px;
+                                                              margin-left:50px;
+                                                              margin-top:10px;
+                                                          }
+                                                          .individualdetail{
+                                                              margin-top:20px;
+                                                              margin-left:14px;
+                                                              color:rgb(248, 244, 223);
+                                                              font-size: 13px;
+                                                              word-spacing: 5px;
+                                                          }
+                                                          .studentdetail{
+                                                              margin-left:20px;
+                                                              margin-top:5px;
+                                                          color:rgb(248, 244, 223);
+                                                          font-size: 9px;
+                                                          word-spacing: 5px;
+                                                                      }
+                                                                      .container7{
+                                                                          width:100%;
+                                                                          height:150px;
+                                                                          background-color:cadetblue
+                                                                      }
+                                                                      .footer-logo {
+                                                                          /* font-size: 24px; */
+                                                                          width:200px;
+                                                                          height:50px;
+                                                                          margin-left:50px;
+                                                                          margin-bottom: 80px;
+                                                                      }
+                                                                      .footer-nav {
+                                                                          margin-bottom: 50px;
+                                                                      }
+                                                                      .footer-nav a {
+                                                                          color: white;
+                                                                          text-decoration: none;
+                                                                          margin: 0 10px;
+                                                                          transition: color 0.3s;
+                                                                      }
+                                                                      .footer-nav a:hover {
+                                                                          color: #f8f9fa;
+                                                                      }
+                                                                      .footer-social {
+                                                                          margin-bottom: 50px;
+                                                                      }
+                                                                      .footer-social a {
+                                                                          color: white;
+                                                                          text-decoration: none;
+                                                                          margin: 0 5px;
+                                                                          transition: color 0.3s;
+                                                                      }
+                                                                      .footer-social a:hover {
+                                                                          color: #f8f9fa;
+                                                                      }
+                                                                      .footer-text {
+                                                                          font-size: 10px;
+                                                                      }
+                                              }
+                                              .login-page{
+                                                          width:100%;
+                                                          height:545px;
+                                                          /* background-color:red; */
+                                                          display:none;
+                                                          }
+                                              .login-gold{
+                                                          width:100%;
+                                                          height:545px;
+                                                          position: relative;
+                                                          }
+
+                                              .login-detail{
+
+                                                  width:650px;
+                                                  height:470px;
+                                                  margin-left:400px;
+                                                  margin-top:-500px;
+                                                  border-radius: 10px;
+                                                  /* background-color: aquamarine; */
+                                                  position: absolute;
+                                                  background: rgba(255, 255, 255, 0.2);
+                                                  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                                                  backdrop-filter: blur(5px);
+                                                  -webkit-backdrop-filter: blur(5px);
+                                                  border: 1px solid rgba(255, 255, 255, 0.3); 
+                                              }
+                                              .emailuser{
+                                                          font-family:serif;
+                                                          margin-left:100px;
+                                                          margin-top:100px;  
+                                                          color:white;
+                                                        }
+                                              .inputtxt{
+                                                          margin-left:100px;
+                                                          margin-top:20px;
+                                                          width:400px;
+                                                          height:40px;
+                                                          font-size:15px;
+                                                          background: rgba(255, 255, 255, 0.2);
+                                                          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                                                          backdrop-filter: blur(5px);
+                                                          border-radius: 10px;
+                                                        }
+                                              .password{
+                                                          color:white;
+                                                          margin-top:30px;
+                                                          margin-left:100px;
+                                                          }    
+                                              .passwrdtxt{
+                                                              width:400px;
+                                                              height: 40px;
+                                                              margin-left:100px;
+                                                              margin-top:20px;
+                                                              font-size:15px;
+                                                              background: rgba(255, 255, 255, 0.2);
+                                                              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                                                              backdrop-filter: blur(5px);
+                                                              border-radius: 10px;
+                                                          }
+                                          .continue{
+                                                      margin-left:550px;
+                                                      margin-top:-130px;
+                                                      width:300px;
+                                                      height: 40px;
+                                                      background-color:rgb(226, 232, 239);
+                                                      position: relative;
+                                                      border-radius: 10px;
+                                                   }
+                                          .contxt{
+                                                      margin-left:90px;
+                                                      /* margin-top:15px; */
+                                                  }
+
+
+
+                                                  .sidebar {
+                                                      height: 100vh;
+                                                      width: 200px;
+                                                      background-color:#000000;
+                                                      color: #fff;
+                                                      padding-top: 20px;
+                                                      position: fixed;
+                                                      display: none;
+                                                    }
+                                                    
+                                                    .logo-sidebar {
+                                                      font-size: 24px;
+                                                      font-weight: bold;
+                                                      padding: 10px;
+                                                      text-align: center;
+                                                      border-bottom: 1px solid #000000;
+                                                      display: none;
+                                                    }
+                                                    
+                                                    .item-side {
+                                                      padding: 10px;
+                                                      text-align: center;
+                                                      cursor: pointer;
+                                                      transition: background-color 0.3s;
+                                                      display: none;
+                                                      /* font-size: 5px; */
+                                                    }
+                                                    .text-side{
+                                                      /* padding: 100px; */
+                                                      margin-top:550px;
+                                                      text-align: center;
+                                                      cursor: pointer;
+                                                      transition: background-color 0.3s;
+                                                      display: none;
+                                                      font-size: 12px;
+                                                              }
+                                                    .item-side:hover {
+                                                      background-color: #555;
+                                                    }    
+
+                                              .music-list{
+                                                          width:161vh;
+                                                          margin-left:200px;
+                                                          height:230vh;
+                                                          background-color:var(--black);
+                                                          /* background-color: #4158D0;
+                                                      background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
+                                                          
+                                                          display: none;
+                                                          }
+                                              .top-charts{
+                                                          color:black;
+                                                          padding: 30px 0px 10px 20px;
+                                                          font-size: 20px;
+                                                          /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+                                                          }
+
+                                          .music-container {
+                                                              display: flex;
+                                                              width: 1230px;
+                                                              height: 350px;
+                                                              margin-left:20px;
+                                                              margin-top:10px;
+                                                              border: 1px solid gold;
+                                                              border-radius: 10px;
+
+                                                              /* box-shadow: 3px 3px 3px 3px; */
+                                                              /* overflow-x: scroll; */
+                                                          
+                                                            }
+                                          .music-div{
+                                                          width:250px;
+                                                          height:300px;
+                                                          /* background-color: aqua; */
+                                                          margin-left:30px;
+                                                          margin-top:25px;
+                                                          border-radius: 10px;
+                                                          /* box-shadow: -1rem 0 3rem #000; */
+                                                          /* border: none;
+                                                          outline: none;
+                                                          cursor: pointer;
+                                                          position: relative;
+                                                          z-index: 0;
+                                                        border-radius: 10px;
+                                                        user-select: none;
+                                                        -webkit-user-select: none;
+                                                        touch-action: manipulation; */
+                                                     }
+                                                     /* .music-div:before {
+                                                      content: "";
+                                                      background: linear-gradient(
+                                                        45deg,
+                                                        #ff0000,
+                                                        #ff7300,
+                                                        #fffb00,
+                                                        #48ff00,
+                                                        #00ffd5,
+                                                        #002bff,
+                                                        #7a00ff,
+                                                        #ff00c8,
+                                                        #ff0000
+                                                      );
+                                                      position: absolute;
+                                                      top: -2px;
+                                                      left: -2px;
+                                                      background-size: 400%;
+                                                      z-index: -1;
+                                                      filter: blur(5px);
+                                                      -webkit-filter: blur(5px);
+                                                      width: calc(100% + 4px);
+                                                      height: calc(100% + 4px);
+                                                      animation: glowing-button-85 20s linear infinite;
+                                                      transition: opacity 0.3s ease-in-out;
+                                                      border-radius: 10px;
+                                                    }
+                                                    @keyframes glowing-button-85 {
+                                                      0% {
+                                                        background-position: 0 0;
+                                                      }
+                                                      50% {
+                                                        background-position: 400% 0;
+                                                      }
+                                                      100% {
+                                                        background-position: 0 0;
+                                                      }
+                                                    }
+                                                    
+                                                    .music-div:after {
+                                                      z-index: -1;
+                                                      content: "";
+                                                      position: absolute;
+                                                      width: 100%;
+                                                      height: 100%;
+                                                      background: #222;
+                                                      left: 0;
+                                                      top: 0;
+                                                      border-radius: 10px;
+                                                    } */
+
+
+                                          .music-div1{
+                                                          width:250px;
+                                                          height:300px;
+                                                          /* background-color: aqua; */
+                                                          margin-left:40px;
+                                                          margin-top:24px;
+                                                      }
+                                                      .music-div2{
+                                                          width:250px;
+                                                          height:300px;
+                                                          /* background-color: aqua; */
+                                                          margin-left:40px;
+                                                          margin-top:24px;
+                                                      }
+                                                      .music-div3{
+                                                          width:250px;
+                                                          height:300px;
+                                                          /* background-color: aqua; */
+                                                          margin-left:40px;
+                                                          margin-top:24px;
+                                                      }
+                                          .top-chartmusic{
+                                                              border-radius: 10px;
+                                                               box-shadow: -1rem 0 3rem #000;
+                                                          }
+                                          /* .top-chartmusic:hover{
+                                                                  transform: translateY(-20px);
+                                                                  transition: 0.4s ease-out;
+                                                                } */
+                                                          .top-chartmusic:hover  + .topplaybtn, .topplaybtn:hover{
+                                                              opacity:1; 
+                                                              transform: translateY(0);
+                                                             }
+                                          .top-chartmusic1{
+                                                              border-radius: 10px;
+                                                              box-shadow: -1rem 0 3rem #000;
+                                                          }
+                                                          .top-chartmusic1:hover  + .topplaybtn1, .topplaybtn1:hover{
+                                                              opacity:1; 
+                                                              transform: translateY(0);
+                                                             }
+                                          .top-chartmusic2{
+                                                              border-radius: 10px;
+                                                              box-shadow: -1rem 0 3rem #000;
+                                                          }
+                                                          .top-chartmusic2:hover  + .topplaybtn2, .topplaybtn2:hover{
+                                                              opacity:1; 
+                                                              transform: translateY(0);
+                                                             }
+                                          .top-chartmusic3{
+                                                              border-radius: 10px;
+                                                              box-shadow: -1rem 0 3rem #000;
+                                                          }
+                                                          .top-chartmusic3:hover  + .topplaybtn3, .topplaybtn3:hover{
+                                                              opacity:1; 
+                                                              transform: translateY(0);
+                                                             }
+                                              .topplaybtn{
+                                                           width: 62px;
+                                                           height: 62px;
+                                                           margin-left:95px;
+                                                           margin-top:-150px;
+                                                           transform: translateY(10px);
+                                                           transition: all 0.4s;
+                                                           opacity: 0;
+                                                          }
+                                              
+                                              .topplaybtn1{
+                                                              width: 62px;
+                                                              height: 62px;
+                                                              margin-left:95px;
+                                                              margin-top:-150px;
+                                                              transform: translateY(10px);
+                                                              transition: all 0.4s;
+                                                              opacity: 0;
+                                                             }
+                                              .topplaybtn2{
+                                                              width: 62px;
+                                                              height: 62px;
+                                                              margin-left:95px;
+                                                              margin-top:-150px;
+                                                              transform: translateY(10px);
+                                                              transition: all 0.4s;
+                                                              opacity: 0;
+                                                             }
+                                              .topplaybtn3{
+                                                              width: 62px;
+                                                              height: 62px;
+                                                              margin-left:95px;
+                                                              margin-top:-150px;
+                                                              transform: translateY(10px);
+                                                              transition: all 0.4s;
+                                                              opacity: 0;
+                                                             }
+                                              .new-Releases{
+                                                              padding: 70px 0px 10px 20px;
+                                                              font-size: 20px;
+                                                              color: #000;
+                                                          }
+                                              .music-container1 {
+                                                              display: flex;
+                                                              width: 1230px;
+                                                              height: 350px;
+                                                              margin-left:20px;
+                                                              margin-top:20px;
+                                                              border: 1px solid gold;
+                                                              border-radius: 10px;
+
+                                                              /* box-shadow: 3px 3px 3px 3px; */
+                                                              /* overflow-x: scroll; */
+                                                          
+                                                            }
+                                              .release-div1{
+                                                              width:250px;
+                                                              height:300px;
+                                                              /* background-color: aqua; */
+                                                              margin-left:40px;
+                                                              margin-top:24px;
+                                                          }
+                                                          .release-div2{
+                                                              width:250px;
+                                                              height:300px;
+                                                              /* background-color: aqua; */
+                                                              margin-left:40px;
+                                                              margin-top:24px;
+                                                          }
+                                                          .release-div3{
+                                                              width:250px;
+                                                              height:300px;
+                                                              /* background-color: aqua; */
+                                                              margin-left:40px;
+                                                              margin-top:24px;
+                                                          }
+                                                          .release-div4{
+                                                              width:250px;
+                                                              height:300px;
+                                                              /* background-color: aqua; */
+                                                              margin-left:40px;
+                                                              margin-top:24px;
+                                                          }
+                                   .new-Releases1{
+                                                    border-radius: 10px;
+                                                    box-shadow: -1rem 0 3rem #000;
+                                                  }
+                                                  .new-Releases1:hover  + .new-releasebtn1, .new-releasebtn1:hover{
+                                                      opacity:1; 
+                                                      transform: translateY(0);
+                                                     }
+                                                  .new-Releases2{
+                                                      border-radius: 10px;
+                                                      box-shadow: -1rem 0 3rem #000;
+                                                    }
+                                                    .new-Releases2:hover  + .new-releasebtn2, .new-releasebtn2:hover{
+                                                      opacity:1; 
+                                                      transform: translateY(0);
+                                                     }
+                                                    .new-Releases3{
+                                                      border-radius: 10px;
+                                                      box-shadow: -1rem 0 3rem #000;
+                                                    }
+                                                    .new-Releases3:hover  + .new-releasebtn3, .new-releasebtn3:hover{
+                                                      opacity:1; 
+                                                      transform: translateY(0);
+                                                     }
+                                                    .new-Releases4{
+                                                      border-radius: 10px;
+                                                      box-shadow: -1rem 0 3rem #000;
+                                                    }
+                                                    .new-Releases4:hover  + .new-releasebtn4, .new-releasebtn4:hover{
+                                                      opacity:1; 
+                                                      transform: translateY(0);
+                                                     }
+                              .new-releasebtn1{
+                                  width: 62px;
+                                  height: 62px;
+                                  margin-left:95px;
+                                  margin-top:-150px;
+                                  transform: translateY(10px);
+                                  transition: all 0.4s;
+                                  opacity: 0;
+                                             }
+                                             .new-releasebtn2{
+                                              width: 62px;
+                                              height: 62px;
+                                              margin-left:95px;
+                                              margin-top:-150px;
+                                              transform: translateY(10px);
+                                  transition: all 0.4s;
+                                  opacity: 0;
+                                             }
+                                             .new-releasebtn3{
+                                              width: 62px;
+                                              height: 62px;
+                                              margin-left:95px;
+                                              margin-top:-150px;
+                                              transform: translateY(10px);
+                                  transition: all 0.4s;
+                                  opacity: 0;
+                                             }
+                                             .new-releasebtn4{
+                                              width: 62px;
+                                              height: 62px;
+                                              margin-left:95px;
+                                              margin-top:-150px;
+                                              transform: translateY(10px);
+                                  transition: all 0.4s;
+                                  opacity: 0;
+                                             }
+                                            
+
+
+
+.music-container2 {
+  display: flex;
+  width: 1230px;
+  height: 290px;
+  margin-left:20px;
+  margin-top:20px;
+  border: 1px solid gold;
+  border-radius: 10px;
+}
+.echo-tuneh{
+          padding: 70px 0px 10px 20px;
+          font-size: 20px;
+          color: #000;
+              }
+              :root {
+                  --red: #ef233c;
+                  --darkred: #c00424;
+                  --platinum: #e5e5e5;
+                  --black: #2b2d42;
+                  --white: #fff;
+                  --thumb: #edf2f4;
+                }
+                .cards {
+                  display: flex;
+                  padding: 25px 0px;
+                  list-style: none;
+                  overflow-x: scroll;
+                  scroll-snap-type: x mandatory;
+                }
+                
+                .card {
+                  display: flex;
+                  flex-direction: column;
+                  flex: 0 0 100%;
+                  width:200px;
+                  height:220px;
+                  /* padding: 90px ; */
+                  background: var(--white);
+                  border-radius: 12px;
+                  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+                  scroll-snap-align: start;
+                  transition: all 0.2s;
+                }
+                
+                .card:not(:last-child) {
+                  margin-right: 10px;
+                }
+                
+                .card .card-title {
+                  font-size: 20px;
+                }
+                
+                .card .card-content {
+                  margin: 20px 0;
+                  max-width: 85%;
+                }
+                
+                .card .card-link-wrapper {
+                  margin-top: auto;
+                }
+                
+                .card .card-link {
+                  display: inline-block;
+                  text-decoration: none;
+                  color: white;
+                  background: var(--red);
+                  padding: 6px 12px;
+                  border-radius: 8px;
+                  transition: background 0.2s;
+                }
+                
+                .card:hover .card-link {
+                  background: var(--darkred);
+                }
+                
+                .cards::-webkit-scrollbar {
+                  height: 12px;
+                }
+                
+                .cards::-webkit-scrollbar-thumb,
+                .cards::-webkit-scrollbar-track {
+                  border-radius: 92px;
+                }
+                
+                .cards::-webkit-scrollbar-thumb {
+                  /* background: var(--black); */
+                  background-color: #4158D0;
+                  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+                }
+                
+                .cards::-webkit-scrollbar-track {
+                  background: var(--thumb);
+                }
+                
+                @media (min-width: 500px) {
+                  .card {
+                    flex-basis: calc(50% - 10px);
+                  }
+                
+                  .card:not(:last-child) {
+                    margin-right: 20px;
+                  }
+                }
+                
+                @media (min-width: 700px) {
+                  .card {
+                    flex-basis: calc(calc(100% / 3) - 20px);
+                  }
+                
+                  .card:not(:last-child) {
+                    margin-right: 30px;
+                  }
+                }
+                
+                @media (min-width: 1100px) {
+                  .card {
+                    flex-basis: calc(25% - 30px);
+                  }
+                
+                  .card:not(:last-child) {
+                    margin-right: 40px;
+                  }
+                }
+                                  .echo-tuneimg{
+                                                      border-radius: 10px;
+                                                      box-shadow: -1rem 0 3rem #000;
+                                               }
+                                               .echo-tuneimg:hover  + .echo-tunebtn1, .echo-tunebtn1:hover{
+                                                opacity:1; 
+                                                transform: translateY(0);
+                                               }
+                              .echo-tuneimg1{
+                                                  border-radius: 10px;
+                                                  box-shadow: -1rem 0 3rem #000;
+                                           }
+                                           .echo-tuneimg1:hover  + .echo-tunebtn2, .echo-tunebtn2:hover{
+                                            opacity:1; 
+                                            transform: translateY(0);
+                                           }
+                           .echo-tuneimg2{
+                                              border-radius: 10px;
+                                              box-shadow: -1rem 0 3rem #000;
+                                       }
+                                       .echo-tuneimg2:hover  + .echo-tunebtn3, .echo-tunebtn3:hover{
+                                        opacity:1; 
+                                        transform: translateY(0);
+                                       }
+                         .echo-tuneimg3{
+                                          border-radius: 10px;
+                                          box-shadow: -1rem 0 3rem #000;
+                                   }
+                                   .echo-tuneimg3:hover  + .echo-tunebtn4, .echo-tunebtn4:hover{
+                                    opacity:1; 
+                                    transform: translateY(0);
+                                   }
+                      .echo-tuneimg4{
+                                      border-radius: 10px;
+                                      box-shadow: -1rem 0 3rem #000;
+                               }
+                               .echo-tuneimg4:hover  + .echo-tunebtn5, .echo-tunebtn5:hover{
+                                opacity:1; 
+                                transform: translateY(0);
+                               }
+                      .echo-tuneimg5{
+                                  border-radius: 10px;
+                                  box-shadow: -1rem 0 3rem #000;
+                           }
+                           .echo-tuneimg5:hover  + .echo-tunebtn6, .echo-tunebtn6:hover{
+                            opacity:1; 
+                            transform: translateY(0);
+                           }
+                           .echo-tuneimg6{
+                              border-radius: 10px;
+                              box-shadow: -1rem 0 3rem #000;
+                       }
+                       .echo-tuneimg6:hover  + .echo-tunebtn7, .echo-tunebtn7:hover{
+                        opacity:1; 
+                        transform: translateY(0);
+                       }
+                       .echo-tuneimg7{
+                          border-radius: 10px;
+                          box-shadow: -1rem 0 3rem #000;
+                   }
+                   .echo-tuneimg7:hover  + .echo-tunebtn8, .echo-tunebtn8:hover{
+                    opacity:1; 
+                    transform: translateY(0);
+                   }
+                   .echo-tuneimg8{
+                      border-radius: 10px;
+                      box-shadow: -1rem 0 3rem #000;
+               }
+               .echo-tuneimg8:hover  + .echo-tunebtn9, .echo-tunebtn9:hover{
+                opacity:1; 
+                transform: translateY(0);
+               }
+               .echo-tuneimg9{
+                  border-radius: 10px;
+                  box-shadow: -1rem 0 3rem #000;
+           }  
+           .echo-tuneimg9:hover  + .echo-tunebtn10, .echo-tunebtn10:hover{
+            opacity:1; 
+            transform: translateY(0);
+           }
+           .echo-tunebtn1{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn2{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn3{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn4{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn5{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn6{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn7{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn8{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn9{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .echo-tunebtn10{
+            width: 62px;
+            height: 62px;
+            margin-left:95px;
+            margin-top:-150px;
+            transform: translateY(10px);
+            transition: all 0.4s;
+            opacity: 0;
+           }
+           .music-container3
+            {
+            display: flex;
+            width: 1230px;
+            height: 290px;
+            margin-left:20px;
+            margin-top:20px;
+            border: 1px solid gold;
+            border-radius: 10px;
+          }
+          .echo-topArtist
+          {
+            padding: 70px 0px 10px 20px;
+            font-size: 20px;
+            color: #000;
+          }
+
+
+
+
+
+          .Artist-cards{
+            display: flex;
+            padding: 25px 0px;
+            list-style: none;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+          }
+          
+          .card {
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 100%;
+            width:200px;
+            height:220px;
+            /* padding: 90px ; */
+            background: var(--white);
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+            scroll-snap-align: start;
+            transition: all 0.2s;
+          }
+          
+          .card:not(:last-child) {
+            margin-right: 10px;
+          }
+          
+          .card .card-title {
+            font-size: 20px;
+          }
+          
+          .card .card-content {
+            margin: 20px 0;
+            max-width: 85%;
+          }
+          
+          .card .card-link-wrapper {
+            margin-top: auto;
+          }
+          
+          .card .card-link {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: var(--red);
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: background 0.2s;
+          }
+          
+          .card:hover .card-link {
+            background: var(--darkred);
+          }
+          
+          .Artist-cards::-webkit-scrollbar {
+            height: 12px;
+          }
+          
+          .Artist-cards::-webkit-scrollbar-thumb,
+          .Artist-cards::-webkit-scrollbar-track {
+            border-radius: 92px;
+          }
+          
+          .Artist-cards::-webkit-scrollbar-thumb {
+            /* background: var(--black); */
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+          }
+          
+          .Artist-cards::-webkit-scrollbar-track {
+            background: var(--thumb);
+          }
+          
+          @media (min-width: 500px) {
+            .card {
+              flex-basis: calc(50% - 10px);
+            }
+          
+            .card:not(:last-child) {
+              margin-right: 20px;
+            }
+          }
+          
+          @media (min-width: 700px) {
+            .card {
+              flex-basis: calc(calc(100% / 3) - 20px);
+            }
+          
+            .card:not(:last-child) {
+              margin-right: 30px;
+            }
+          }
+          
+          @media (min-width: 1100px) {
+            .card {
+              flex-basis: calc(25% - 30px);
+            }
+          
+            .card:not(:last-child) {
+              margin-right: 40px;
+            }
+          }
+
+          .echo-artist1{
+                        border-radius: 50%;
+                        box-shadow: -1rem 0 3rem #000;
+                        }
+                        .echo-artist1:hover  + .top-artist1, .top-artist1:hover{
+                          opacity:1; 
+                          transform: translateY(0);
+                         }
+                        .echo-artist2{
+                          border-radius: 50%;
+                          box-shadow: -1rem 0 3rem #000;
+                          }
+                          .echo-artist2:hover  + .top-artist2, .top-artist2:hover{
+                            opacity:1; 
+                            transform: translateY(0);
+                           }
+                           
+                          .echo-artist3{
+                            border-radius: 50%;
+                            box-shadow: -1rem 0 3rem #000;
+                            }
+                            .echo-artist3:hover  + .top-artist3, .top-artist3:hover{
+                              opacity:1; 
+                              transform: translateY(0);
+                             }
+                            .echo-artist4{
+                              border-radius: 50%;
+                              box-shadow: -1rem 0 3rem #000;
+                              }
+                              .echo-artist4:hover  + .top-artist4, .top-artist4:hover{
+                                opacity:1; 
+                                transform: translateY(0);
+                               }
+                              .echo-artist5{
+                                border-radius: 50%;
+                                box-shadow: -1rem 0 3rem #000;
+                                }
+                                .echo-artist5:hover  + .top-artist5, .top-artist5:hover{
+                                  opacity:1; 
+                                  transform: translateY(0);
+                                 }
+                                .echo-artist6{
+                                  border-radius: 50%;
+                                  box-shadow: -1rem 0 3rem #000;
+                                  } 
+                                  .echo-artist6:hover  + .top-artist6, .top-artist6:hover{
+                                    opacity:1; 
+                                    transform: translateY(0);
+                                   }
+                                  .echo-artist7{
+                                    border-radius: 50%;
+                                    box-shadow: -1rem 0 3rem #000;
+                                    }  
+                                    .echo-artist7:hover  + .top-artist7, .top-artist7:hover{
+                                      opacity:1; 
+                                      transform: translateY(0);
+                                     }
+                                    .echo-artist8{
+                                      border-radius: 50%;
+                                      box-shadow: -1rem 0 3rem #000;
+                                      }
+                                      .echo-artist8:hover  + .top-artist8, .top-artist8:hover{
+                                        opacity:1; 
+                                        transform: translateY(0);
+                                       }
+                                      .echo-artist9{
+                                        border-radius: 50%;
+                                        box-shadow: -1rem 0 3rem #000;
+                                        }
+                                        .echo-artist9:hover  + .top-artist9, .top-artist9:hover{
+                                          opacity:1; 
+                                          transform: translateY(0);
+                                         }
+                                        .echo-artist10{
+                                          border-radius: 50%;
+                                          box-shadow: -1rem 0 3rem #000;
+                                          }
+                                          .echo-artist10:hover  + .top-artist10, .top-artist10:hover{
+                                            opacity:1; 
+                                            transform: translateY(0);
+                                           }
+                                          .top-artist1{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist2{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist3{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist4{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist5{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist6{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist7{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist8{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist9{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                           }
+                                           .top-artist10{
+                                            width: 62px;
+                                            height: 62px;
+                                            margin-left:95px;
+                                            margin-top:-150px;
+                                            transform: translateY(10px);
+                                            transition: all 0.4s;
+                                            opacity: 0;
+                                            
+                                           }
+
+
+
+
+
+
+                                           .sidebar1 {
+                                            max-width:300px;
+                                            margin-left:200px;
+                                            background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+                                            padding:20px 788px 280px 200px;    /*top left bottom*/
+                                            display: none;
+                                            position: relative;
+                                        }
+                                        .top1-img{
+                                          width:250px;
+                                          height:220px;
+                                            margin-left:-150px;
+                                            margin-top:20px;
+                                            position: absolute;
+                                            border-radius: 10px 10px 10px 10px;
+                                        }
+                                        .topchart1-word{
+                                          color:white;
+                                          width:800px;
+                                          margin-left:400px;
+                                          margin-top:-170px;
+                                          font-size: 100px;
+                                          font-weight: 900;
+                                        }
+                                        .music-top-play{
+                                          border-radius: 10px 10px 10px 10px;
+                                        }
+
+                                          .top-mus-play{
+                                            background-color: black;
+                                            height:73vh;
+                                            width:161vh;
+                                            margin-top: 280px;
+                                            margin-left:-200px;
+                                            position: absolute;
+                                          }
+                                          .top-chart-table {
+                                            color:white;
+                                          }
+                                          .top-chart-table :hover > td{
+                                            background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                                            radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+                                          }
+                                          .top-chart-table1 {
+                                            color:white;
+                                          }
+                                          .top-chart-table1 :hover > td{
+                                            background-color: #FF3CAC;
+                                            background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+                                            
+                                          }
+                                          .top-chart-table2 {
+                                            color:white;
+                                          }
+                                          .top-chart-table2 :hover > td{
+                                            background-color: #FAD961;
+                                            background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+                                            
+                                            
+                                          }
+                                            .audioms-play
+                                            {
+                                              width:1271px;
+                                              height:100px;
+                                              background-color:black;
+                                              position: absolute;
+                                              margin-top:669px;
+                                              margin-left:-200px;
+                                            }
+                                            .audio-fix{
+                                              position:fixed;
+                                            }
+
+                                            .rangeplay{
+                                              margin-left:400px;
+                                              width:500px;
+                                              margin-top:30px;
+                                              /* background-color: aquamarine; */
+                                              }
+
+
+
+
+                                        .logo-img1{
+                                          width: 150px;
+                                          height:50px;
+                                          margin-left:50px;
+                                          /* background-color: aqua;  */
+                                        }
+                                        .music-pic1{
+                                          width:240px;
+                                          height:200px;
+                                          background-color: aqua;
+                                          margin-top:30px;
+                                          margin-left:30px;
+                                       }
+                                       .artist-list1 {
+                                        list-style-type: none;
+                                        padding: 20px;
+                                        margin-top: 10px;
+                                    }
+                                    
+                                    .artist-list1 li {
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    .artist-list1 li img {
+                                        width: 50px;
+                                        height: 50px;
+                                        border-radius: 50%;
+                                        margin-right: 10px;
+                                        vertical-align: middle;
+                                    }
+                                    
+                                    .artist-list1 li a {
+                                        color: #fff;
+                                        text-decoration: none;
+                                    }
+                                    
+                                    .artist-list1 li a:hover {
+                                        text-decoration: underline;
+                                    }
+                                
+                              button {
+                                margin-left:50px;
+                                margin-top:50px;
+                                padding: 17px 40px;
+                                border-radius: 50px;
+                                cursor: pointer;
+                                border: 0;
+                                background-color: white;
+                                box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+                                letter-spacing: 1.5px;
+                                text-transform: uppercase;
+                                font-size: 15px;
+                                transition: all 0.5s ease;
+                              }
+                              
+                              button:hover {
+                                letter-spacing: 3px;
+                                background-color: hsl(261deg 80% 48%);
+                                color: hsl(0, 0%, 100%);
+                                box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+                              }
+                              
+                              button:active {
+                                letter-spacing: 3px;
+                                background-color: hsl(261deg 80% 48%);
+                                color: hsl(0, 0%, 100%);
+                                box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+                                transform: translateY(10px);
+                                transition: 100ms;
+                              }
+
+                              .container-webplay{
+                                                  display: none;
+                                                }
+                              main{
+                                    grid-template-rows:100px 100px 50px 100px 100px 100px 100px 100px 100px 100px;
+                                    grid-template-columns:100px 100px 100px 100px 100px 100px 300px 400px 172px;
+                                    display:grid;
+                                    /* display:none; */
+                                   }
+
+                                   .d1{
+                                        grid-row: 1/4;
+                                        grid-column:4/10;
+                                        background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+
+                                       }
+                                    .d2{
+                                          grid-row:4/10;
+                                          grid-column: 4/10;
+                                          background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(151,41,247,1) 0%, rgba(24,22,39,1) 90% );
+
+                                        }
+
+                                        .music-footer{
+                                          width:100%;
+                                          height:100px;
+                                          background-color:black;
+                                          position: fixed;
+                                          margin-top:-259px;
+                                      }
+                                      .sound-icon{
+                                        width:24px;
+                                        height:24px;
+                                        background-color: aquamarine;
+                                        margin-left:1250px;
+                                        margin-top:40px;
+                                        position: absolute;
+                                        }
+                                      
+                              audio{
+                                  filter:invert(1);
+                              }
+                              .sound-range{
+                                margin-left:1300px;
+                                margin-top:40px;
+                                position: relative;
+                        }
+
+                        .weekly{
+                          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                          font-size:60px;
+                          margin-top:40px;
+                          margin-left:50px;
+                          color:#fff;
+                        }
